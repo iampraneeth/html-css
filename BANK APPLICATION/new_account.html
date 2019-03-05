@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIGNUP FORM</title>
+</head>
+
+<body>
+    <br>
+    <CENTER>
+        <h1>
+            <font color="PURPLE">NEW REGISTARTION</font>
+        </h1>
+    </CENTER>
+    <BR>
+    <BR>
+
+    <CENTER>
+        <form action="//submit.form" id="SignUp100" method="post" onsubmit="return ValidateForm(this);">
+            <script type="text/javascript">
+                function ValidateForm(frm) {
+                    if (frm.FirstName.value == "") { alert('First Name is required.'); frm.FirstName.focus(); return false; }
+                    if (frm.LastName.value == "") { alert('Last Name is required.'); frm.LastName.focus(); return false; }
+                    if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                    if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                    if (frm.StreetAddress1.value == "") { alert('Address is required.'); frm.StreetAddress1.focus(); return false; }
+                    if (frm.City.value == "") { alert('City is required.'); frm.City.focus(); return false; }
+                    if (frm.Country.value == "") { alert('Country is required.'); frm.Country.focus(); return false; }
+                    return true;
+                }
+            </script>
+            <table border="0" cellpadding="5" cellspacing="0" width="600">
+                <tr>
+                    <td>
+                        <label for="FirstName">First Name</label> & <label for="LastName">Last Name</label>
+                    </td>
+                    <td>
+                        <input name="FirstName" type="text" maxlength="60" style="width: 146px; " required />
+                        <input name="LastName" type="text" maxlength="60" style="width: 146px;" required /><br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <label for="FromEmailAddress">Email Address</label>
+                    </td>
+                    <td>
+                        <input name="FromEmailAddress" type="text" maxlength="60" style="width: 300px;" required />
+
+
+
+
+                    </td>
+                    <tr>
+                    <td>
+                        
+                            <label for="password">Password</label></td>
+                       <td><input name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            maxlength="60" style="width: 300px;" required /> 
+                        </td></tr>
+
+
+
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Phone"> Phone</label>
+                    </td>
+                    <td>
+
+                        <input name="WorkPhone" type="text" pattern="[1-9]{1}[0-9]{9}" style="width: 250px;" required />
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <fieldset id="group1">
+
+                            <input type="radio" name="gender" value="male" required> Male<br>
+                            <input type="radio" name="gender" value="Female" required> Female<br>
+                        </fieldset>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <label for="DATE OF BIRTH">Date Of Birth</label>
+                    </td>
+                    <td>
+                        <input name="DATE OF BIRTH" type="date" maxlength="43" style="width: 250px;" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Account Type</label>
+                    </td>
+                    <td>
+                        <select required>
+                            <option value="">Select</option>
+                            <option value="current">current</option>
+                            <option value="savings">savings</option>
+
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="StreetAddress1">Address 1</label>
+                    </td>
+                    <td>
+                        <input name="StreetAddress1" type="text" maxlength="120" style="width: 350px;" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="StreetAddress2">Address 2</label>
+                    </td>
+                    <td>
+                        <input name="StreetAddress2" type="text" maxlength="120" style="width: 350px;" style="height: 200px" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="City">City</label>
+                    </td>
+                    <td>
+                        <select required>
+                                <option value="">Select</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Mumbai">Mumbai</option>
+
+    
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="State">State</label>
+                    </td>
+                    <td>
+                            <select required>
+                                    <option value="">Select</option>
+                                    <option value="Tn">Tamil Nadu</option>
+                                    <option value="Tel">Telangana</option>
+                                    <option value="Mh">Maharastra</option>
+    
+        
+                                </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Country">Country</label>
+                    </td>
+                    <td>
+                        <input name="Country" type="text" maxlength="120" style="width: 300px;" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                    </td>
+                    <td>
+                        <div style="margin-left:80px;">
+                            <button type="submit" class="btn btn-default">Submit</button></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </CENTER>
+</body>
+
+</html>
